@@ -29,6 +29,7 @@ body {
 }
 
 /* \\\\\-----Header----///// */
+
 header {
     width: 100%;
     height: 4rem;
@@ -37,7 +38,15 @@ header {
     top: 0;
     z-index: 99;
 }
-
+@media screen and (max-width: 480px) {
+   nav {
+      
+    }
+    nav ul li a{ 
+        display: none;
+        background-color: lightgreen;
+    }
+  }
 nav ul {
     display: flex;
     align-items: center;
